@@ -3,7 +3,7 @@
 # -----------------
 
 resource_group_name = "rg-nerdioapplication-sbx-sbx-szn-01"
-azuread_app_name = "nerdio-nmw-app-{unique_suffix}"
+azuread_app_name = "nerdio-nmw-app-1234"
 azure_environment = "AzureCloud" 
 subscription_display_name = "My Production Subscription"
 
@@ -18,20 +18,20 @@ protect_resources = true
 
 app_service_plan_sku_name="B3"
 
-app_service_plan_name = "{app-name}-plan-{unique_suffix}"
-web_app_portal_name   = "{app-name}-{unique_suffix}"
-logs_law_name = "{app-name}-law-{unique_suffix}"
-law_name              = "{app-name}-law-insights-{unique_suffix}"
-app_insights_name     = "{app-name}-insights-{unique_suffix}"
-automation_account_name = "{app-name}-automation-{unique_suffix}"
-scripted_action_account_name = "{app-name}-scripted-actions-{unique_suffix}"
+app_service_plan_name = "nerdio-plan-1234"
+web_app_portal_name   = "nerdio-1234"
+logs_law_name = "nerdio-law-1234"
+law_name              = "nerdio-law-insights-1234"
+app_insights_name     = "nerdio-insights-1234"
+automation_account_name = "nerdio-automation-1234"
+scripted_action_account_name = "nerdio-scripted-actions-1234"
 
 # -----------------
 # Database
 # -----------------
 
-sql_server_name = "{app-name}-sql-{unique_suffix}"
-database_name   = "{app-name}-db"
+sql_server_name = "nerdio-sql-1234"
+database_name   = "nerdio-db"
 sql_collation   = "SQL_Latin1_General_CP1_CI_AS"
 database_max_size_gb = 250
 database_sku_name = "S1"
@@ -40,10 +40,10 @@ database_sku_name = "S1"
 # Storage
 # -----------------
 
-key_vault_name = "{app-name}-kv-{unique_suffix}"
-data_protection_storage_account_name = "dps{unique_suffix}"
-data_protection_keys_blob_name = "keys-{unique_suffix}.xml"
-data_protection_key_name = "DataProtection-{unique_suffix}"
+key_vault_name = "nerdio-kv-1234"
+data_protection_storage_account_name = "dps1234"
+data_protection_keys_blob_name = "keys-1234.xml"
+data_protection_key_name = "DataProtection-1234"
 
 # -----------------
 # Certificate
@@ -70,12 +70,12 @@ private_web_app             = false
 # private_endpoint_post_resolve_delay = 0
 
 network_config = {
-  vnet_name       = "{app-name}-private-vnet"
-  vnet_cidr       = "10.200.0.0/16"
-  pe_subnet_name  = "{app-name}-privateendpoints-subnet"
-  pe_subnet_cidr  = "10.200.1.0/24"
-  app_subnet_name = "{app-name}-subnet"
-  app_subnet_cidr = "10.200.2.0/27"
+  vnet_name       = "vnet-shared-sbx-sbx-szn-01"
+  vnet_cidr       = "10.0.7.0/24"
+  pe_subnet_name  = "snet-privateendpoint-sbx-sbx-szn-01"
+  pe_subnet_cidr  = "10.0.7.0/27"
+  app_subnet_name = "snet-appservice-sbx-sbx-szn-01"
+  app_subnet_cidr = "10.0.7.64/27"
 }
 
 # -----------------
