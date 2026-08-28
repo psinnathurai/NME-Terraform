@@ -76,7 +76,7 @@ Install-Module Az.Accounts, Az.Websites, SqlServer -Scope CurrentUser -Force
 
 ### Azure Permissions
 
-The deployment pipeline service principal must have the following permissions on the target Azure subscription: the **Owner** role, or alternatively a combination of **Contributor** and **User Access Administrator** with delegated assignments restricted to **Contributor**, **Reader**, and **Backup Reader**.
+The deployment pipeline service principal must have the following permissions on the target Azure subscription: the **Owner** role, or alternatively a combination of **Contributor** and **User Access Administrator** with delegated assignments restricted to **Contributor**, **Reader**, **Key Vault Certificates Officer** and **Backup Reader**.
 
 ### Entra ID Permissions
 
