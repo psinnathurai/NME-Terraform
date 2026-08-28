@@ -2,7 +2,7 @@
 # Basics
 # -----------------
 
-resource_group_name = "rg-nerdioapplication-sbx-sbx-szn-01"
+resource_group_name = "rg-nerdiotfapp-sbx-sbx-szn-01"
 azuread_app_name = "nerdio-nmw-app-1234"
 azure_environment = "AzureCloud" 
 subscription_display_name = "My Production Subscription"
